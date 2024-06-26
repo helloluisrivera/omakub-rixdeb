@@ -15,6 +15,9 @@ for script in ~/.local/share/omakub/install/*.sh; do source $script; done
 # Upgrade everything that might ask for a reboot last
 sudo apt upgrade -y
 
+# Install chezmoi and grab my dotfiles (instead of using anything from the original repo)
+sh -c "$(wget -qO- get.chezmoi.io)" -- init --apply helloluisrivera
+
 # Revert to normal idle and lock settings
 gsettings set org.gnome.desktop.screensaver lock-enabled true
 gsettings set org.gnome.desktop.session idle-delay 300
