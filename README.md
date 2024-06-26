@@ -1,5 +1,8 @@
-#rix-deb
+# rix-deb
+
 This isn't meant to be used by anyone else. I'm taking the pieces of this project that I like and use and migrating into my dotfiles and stuff.
+
+wget -qO- https://raw.githubusercontent.com/helloluisrivera/omakub-rixdeb/master/installer  | bash
 
 # Omakub
 
